@@ -7,12 +7,16 @@
 </template>
 
 <script>
-import AppLayout from '../Layouts/AppLayout.vue'
-name: 'app';
+import AppLayout from "@/Layouts/AppLayout";
+
 export default {
+components: {
+  AppLayout
+},
+  name: 'app',
     mounted() {
         console.log("Component mounted.");
     }
-    
+
 }
 </script>
