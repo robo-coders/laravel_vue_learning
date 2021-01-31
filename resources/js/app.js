@@ -23,9 +23,13 @@ Vue.use(PortalVue);
 Vue.use(VueRouter);
 
 Vue.component(
-    "app",
+    "example",
     require('./components/ExampleComponent.vue').default
-    );
+);
+Vue.component(
+    "second",
+    require('./components/ExampleSecond.vue').default
+);
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 // const app = document.getElementById('app');

@@ -184,7 +184,7 @@
                         <div class="dropdown-box mt-10 absolute w-56 top-0 right-0 z-20">
                             <div class="dropdown-box__content box bg-theme-38 text-white">
                                 <div class="p-4 border-b border-theme-40">
-                                    <div class="font-medium">{{ $page.user.name }}</div>
+                                    <div class="font-medium">name here</div>
                                     <div class="text-xs text-theme-41">Software Engineer</div>
                                 </div>
                                 <div class="p-2 border-t border-theme-40">

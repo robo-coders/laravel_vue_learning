@@ -1,22 +1,15 @@
 <template>
-    <app-layout>
-        <div>
-            <h1>this is a test</h1>
-        </div>
-    </app-layout>
+    <div>
+        <h1>First component</h1>
+    </div>
 </template>
 
 <script>
-import AppLayout from "@/Layouts/AppLayout";
-
+import AppLayout from '../Layouts/AppLayout.vue';
 export default {
-components: {
-  AppLayout
-},
-  name: 'app',
-    mounted() {
-        console.log("Component mounted.");
+    // name: 'app',
+    components:{
+        AppLayout
     }
-
 }
 </script>

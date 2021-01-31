@@ -9,11 +9,17 @@ const routes = [
         // component: 'ExampleComponent',
         name:   'example'
     },
+    {
+        path: '/second',
+        component:require('./components/ExampleSecond.vue'),
+        name:   'second'
+    },
 ];
 
 // const router = VueRouter.createRouter({
 const router = new VueRouter({
     routes,
+    mode: "history",
   });
 
 export default router;
