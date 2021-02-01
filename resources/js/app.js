@@ -39,7 +39,7 @@ Vue.use(PortalVue);
 import One from "./components/ExampleComponent.vue'"
 import Two from "./components/ExampleSecond.vue"
 
-export  const router = new VueRouter({
+const router = new VueRouter({
     mode: 'history',
     routes: [
         {
