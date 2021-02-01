@@ -4,8 +4,9 @@ require('moment');
 
 import Vue from 'vue';
 
-import router from './routes';
 import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
 import { InertiaApp } from '@inertiajs/inertia-vue';
 import { InertiaForm } from 'laravel-jetstream';
 import PortalVue from 'portal-vue';
@@ -20,24 +21,42 @@ window.feather = feather
 Vue.use(InertiaApp);
 Vue.use(InertiaForm);
 Vue.use(PortalVue);
-Vue.use(VueRouter);
 
-Vue.component(
-    "example",
-    require('./components/ExampleComponent.vue').default
-);
-Vue.component(
-    "second",
-    require('./components/ExampleSecond.vue').default
-);
+
+// Vue.component(
+//     "example",
+//     require('./components/ExampleComponent.vue').default
+// );
+// Vue.component(
+//     "second",
+//     require('./components/ExampleSecond.vue').default
+// );
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 // const app = document.getElementById('app');
 
+
+import One from "./components/ExampleComponent.vue'"
+import Two from "./components/ExampleSecond.vue"
+
+const router = new VueRouter({
+    mode: 'history',
+    routes: [
+        {
+            path: "/one",
+            component: One
+        },
+        {
+            path: "/two",
+            component: Two
+        },
+    ],
+});
+
 new Vue({
     el: "#app",
     render : h => h('app'),
-    router: router
+    router
 });
 
 // new Vue({
